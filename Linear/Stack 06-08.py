@@ -1,13 +1,13 @@
 ## 함수
-def isStackFull() :
-    global size, stack, top
+def isStackFull() :                    # 스텍이 꽉찼는지 확인
+    global size, stack, top            # 꽉 찬 상태라면 오버플로우 발생
     if top == size - 1 :
         return True
     else:
         return False
 
-def push(data) :                    # 스텍이 꽉찼는지 확인
-    global size, stack, top         # 꽉 찬 상태라면 오버플로우 발생
+def push(data) :
+    global size, stack, top
     if isStackFull() :              # 함수자체가 true, false 임
         print('스택이 꽉 찼습니다.')
         return
