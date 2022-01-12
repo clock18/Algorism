@@ -7,10 +7,10 @@ def binSearch(ary, fData) :
     end = len(ary) - 1
 
     while start <= end :
-        mid = (start + end) // 2
-        if dataAry[mid] == fData :
+        mid = (start + end) // 2        # 나머지가 날아감
+        if ary[mid] == fData :
             return mid
-        elif dataAry[mid] < fData :
+        elif ary[mid] < fData :
             start = mid + 1
         else :
             end = mid - 1

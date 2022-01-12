@@ -3,9 +3,9 @@ import random
 ## 함수
 def selectionSort(ary) :
     n = len(ary)
-    for cy in range(0, n-1) :
+    for cy in range(0, n-1) :       # 싸이클 수
         minIdx = cy
-        for i in range(cy+1, n):
+        for i in range(cy+1, n):    # 정렬 인원 수
             if ary[minIdx] > ary[i]:
                 minIdx = i
         ary[cy], ary[minIdx] = ary[minIdx], ary[cy]
@@ -13,7 +13,7 @@ def selectionSort(ary) :
 
 
 ## 전역 변수
-dataAry = [ random.randint(100,200) for _ in range(20) ]
+dataAry = [ random.randint(100,200) for _ in range(10) ]
 
 
 ## 메인 함수

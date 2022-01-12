@@ -10,7 +10,7 @@ def findMinIndex(ary) :
 
 
 ## 전역 변수
-# testAry = [55, 88, 33, 77]
+
 testAry = [ random.randint(0,99) for _ in range(20)]
 
 
